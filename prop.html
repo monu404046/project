@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> Student Grade Solver in JavaScript </title>
+		<script language = "Javascript">
+			function Average(eng,math,theo,sci,his)
+			{
+				ave = (eng+math+theo+sci+his)/5;
+				return(ave);
+			}
+			
+			var studname = prompt ("Enter Student Name:","");
+			var gr_eng = parseInt (prompt ("Enter grade in English:"," "));
+			var gr_math = parseInt (prompt ("Enter grade in Math:"," "));
+			var gr_theo = parseInt (prompt ("Enter grade in Theology:"," "));
+			var gr_sci = parseInt (prompt ("Enter grade in Science:"," "));
+			var gr_his = parseInt (prompt ("Enter grade in History:"," "));
+			var ave=Average(gr_eng,gr_math,gr_theo,gr_sci,gr_his);
+			document.write ("<center><h1> STUDENT GRADE SHEET </h1><hr width='75%' color='blue' size='3'>");
+			document.write ("<table><tr><td>Student<td>Name:<td><b>",studname,"</b>");
+			document.write ("<tr><td><b><u>Subject:</b></u><td><br>");
+			document.write ("<tr><td><br><td> English:<td>",gr_eng);
+			document.write ("<tr><td><br><td> Math:<td>",gr_math);
+			document.write ("<tr><td><br><td> Theology:<td>",gr_theo);
+			document.write ("<tr><td><br><td> Science:<td>",gr_sci);
+			document.write ("<tr><td><br><td> History:<td>",gr_his);
+			document.write ("<tr><td>Average<td>Grade:<td><b><p>",ave,"</b>");
+			if (ave >= 75)
+				{
+					status = "Passed";
+				}
+				else
+				{	
+					status = "Failed";
+				}
+			document.write ("<tr><td>Status:<td><br><td><b>",status,"</b></table><hr width=75% color='blue' size=3>"); 
+		</script>
+	</head>
+<body >
+</body>
+</html>
