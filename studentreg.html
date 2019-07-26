@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>studentreg</title>
+</head>
+<body>
+    <form action="" style="border: inset 2px">
+            <table>
+                <tr>
+                        <td>NAME:</td>
+                        <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                        <td>SEM:</td>
+                        <td><select name="" id="sem">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                        </select></td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <td>EXAM CODE:</td>
+                        <td>
+                                <input type="text"  id="n2">
+                        </td>
+                </tr> <br>
+                <tr> <br><br>
+                        <td>ENGLISH:</td>
+                        <td></td>
+                        &nbsp;&nbsp;&nbsp;
+                        <td>ENGLISH MARK :</td>
+                        <td><input type="text" id="ENG"></td>
+                        &nbsp;&nbsp;&nbsp;
+                        <td>ENGLISH TOTAL MARK:</td>
+                        <td><input type="text" id="ENG_tot"></td>
+                </tr>
+                <tr>
+                    <td>MATHS:</td>
+                    <td><input type="text" id="sub2_name"></td>
+                    &nbsp;&nbsp;&nbsp;
+                    <td>SUBJECT 2 MARK OBTAINED:</td>
+                    <td><input type="text" id="sub2_mar"></td>
+                    &nbsp;&nbsp;&nbsp;
+                    <td>SUBJECT 2 TOTAL MARK:</td>
+                    <td><input type="text" id="sub2_tot"></td>
+            </tr>
+            <tr>
+                <td>COMPUTER:</td>
+                <td><input type="text" id="sub3_name"></td>
+                &nbsp;&nbsp;&nbsp;
+                <td>COMPUTER MARK:</td>
+                <td><input type="text" id="sub3_mar"></td>
+                &nbsp;&nbsp;&nbsp;
+                <td>COMPUTER TOTAL MARK
+                </td>
+                <td><input type="text" id="sub3_tot"></td>
+        </tr>
+        <tr>
+            <td>CPP:</td>
+            <td><input type="text" id="sub4_name"></td>
+            &nbsp;&nbsp;&nbsp;
+            <td>CPP MARK :</td>
+            <td><input type="text" id="sub4_mar"></td>
+            &nbsp;&nbsp;&nbsp;
+            <td>CPPTOTAL MARK:</td>
+            <td><input type="text" id="sub4_tot"></td>
+    </tr>
+    <tr>
+        <td>VB:</td>
+        <td><input type="text" id="sub5_name"></td>
+        &nbsp;&nbsp;&nbsp;
+        <td>VB MARK:</td>
+        <td><input type="text" id="sub5_mar"></td>
+        &nbsp;&nbsp;&nbsp;
+        <td>VB TOTAL MARK:</td>
+        <td><input type="text" id="sub5_tot"></td>
+</tr>
+<tr>
+    <td>SPOKEN ENG:</td>
+    <td><input type="text" id="sub6_name"></td>
+    &nbsp;&nbsp;&nbsp;
+    <td> SPOKEN ENG MARK:</td>
+    <td><input type="text" id="sub6_mar"></td>
+    &nbsp;&nbsp;&nbsp;
+    <td>SPOKEN ENG TOTAL:</td>
+    <td><input type="text" id="sub6_tot"></td>
+</tr>
+<tr><div ><td><button type="button" onclick="getrslt();" >GENERATE RESULT</button></td></div> </tr>
+<table style="border: inset 2px">
+<tr>
+        
+      
+        <td><div id="x">
+            <p id="cod"></p>
+        </div></td>
+        
+</tr>
+</table>
+            </table>
+            <script>
+                function getrslt()
+                {
+let name = document.getElementById("name").value;
+let sem = document.getElementById("sem").value;
+let n2 = document.getElementById("n2").value;
+let ENG = document.getElementById("ENG").value;
+
+console.log(name);
+console.log(sem);
+console.log(ENG);
+
+                }
+            </script>
+    </form>
+</body>
+</html>
